@@ -1,5 +1,5 @@
 ---
-sequence: 20
+sequence: 23
 title: Build Toolchain Hardening
 layout: mitigation
 doc-status: Draft
@@ -44,6 +44,7 @@ related_mitigations:
 ## Summary
 
 Build Toolchain Hardening is a comprehensive set of preventative and detective controls that protect the integrity, confidentiality, and availability of CI/CD platforms, build agents, artefact registries, and all tools and services in the software delivery pipeline. It reduces the attack surface of build infrastructure through access controls, environmental isolation, integrity verification, continuous monitoring, and proactive maintenance — ensuring that build tools cannot be used as a vector to inject malicious code into production artefacts.
+The relevant regulations and frameworks (e.g. NIST at SSDF PO.3.2, PO.5.1 and PS.3.1) detail the controls that need to be implemented for protecting the toolchain, and are largely based on IEC 62443-4-1 SM-7: development environment security.  
 
 ## Description
 
@@ -95,21 +96,11 @@ Build toolchain monitoring provides comprehensive visibility across five domains
 
 ## Requirements
 
-* All human access to build toolchain systems MUST be protected by multi-factor authentication (MFA); MFA bypass MUST require a documented exception with compensating controls
-* Service accounts and pipeline identities MUST be granted least-privilege permissions; permissions MUST be scoped to the specific resources and actions required for each identity's function
-* Distinct roles MUST be enforced for build execution, artefact approval, and production deployment; a single identity MUST NOT hold permissions to perform all three functions without a documented exception
-* All third-party tools, plugins, and base images used in the build pipeline MUST be pinned to specific verified versions and MUST be verified against cryptographic checksums or signatures at pipeline execution time
-* Build environments for production pipelines MUST be ephemeral; persistent runner state MUST NOT be carried between build jobs
-* Build containers and virtual machine runners MUST be isolated from one another; cross-job access to secrets, environment variables, or artefacts from other jobs or projects MUST be prohibited
-* Build infrastructure configurations MUST be defined as code, version-controlled, and subject to the same review and approval process as application code changes
-* Configuration drift detection MUST be applied to all build infrastructure components; deviations from the approved baseline MUST generate alerts within a defined SLA
-* Hardening benchmarks MUST be applied to all CI/CD platforms, build agents, and artefact registries; compliance with the hardening baseline MUST be verified at provisioning time and rechecked on a defined schedule
-* Sensitive build workloads involving cryptographic operations or regulated software MUST be evaluated for air-gap requirements; air-gapped execution MUST be applied where the risk assessment determines it is warranted
-* Build process audit trails MUST be complete, tamper-evident, and stored in a system that pipeline identities cannot modify or delete; audit logs MUST be retained for a period consistent with regulatory requirements
-* Access logs, configuration change logs, and security event logs MUST be generated for all build infrastructure components and MUST be forwarded to a centralised logging system
-* Automated vulnerability scanning MUST be applied to toolchain components (CI/CD plugins, base images, pipeline libraries) on a defined schedule; findings MUST be triaged and remediated under the standard vulnerability management SLA
-* All build toolchain components MUST be subject to a defined patch management process; critical vulnerabilities MUST be remediated within the organisation's standard SLA
-* Security testing of the build pipeline MUST be conducted at least annually and following any significant architectural change to build infrastructure
+* Update the security management system(SMS) so it includes the list of products and components that are part of your SDLC
+* Document controls that must be implemented for each product from the above list and set baselines for the controls defined
+* Record quarterly access reviews, change tickets for pipeline modifications, drift-check output, integrity verification results and internal audit reports. 
+* Perform annual internal audits that samples build systems against the baseline plus continuous automated config checks and record results.
+* Collect the recorded internal audits results as specific "evidence pack" to allow Auditors evaluate toolchain hardening through Document Reviews and On-Site/Virtual Infrastructure Inspections
 
 ## Examples & Commentary
 
@@ -127,6 +118,8 @@ Build toolchain monitoring provides comprehensive visibility across five domains
 
 ## Links
 
+- [NIST Secure Software Development Framework (SSDF): Implement Supporting Toolchains (PO.3)](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf)
+- [NIST Secure Software Development Framework (SSDF): Implement and Maintain Secure Environments for Software Development (PO.5):](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf)
 - [NIST SP 800-53r5 SR-3: Supply Chain Controls and Processes](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf)
 - [NIST SP 800-53r5 SA-15: Development Process, Standards, and Tools](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf)
 - [NIST SP 800-53r5 CM-7: Least Functionality](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf)
