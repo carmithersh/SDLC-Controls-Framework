@@ -50,13 +50,13 @@ category_icons:
 
 document_status:
   - name: Pre-Draft
-    description: "Initial brainstorming or collection of ideas, notes, and outlines. The document is not yet formally written."
+    description: "Agreed as needed, but nobody has started writing it yet."
   - name: Draft
-    description: "The document is in the early stages of development, with content being written and structured but not yet polished."
+    description: "Written and open as a pull request for working-group review. Not yet merged, so it does not appear on the site."
   - name: First-Reading-Approved
-    description: "The document has passed its first reading by the working group and is substantially complete, but has not yet received final approval."
+    description: "Reviewed by the working group and merged. Substantially complete, but may still change before final approval."
   - name: Working-Group-Approved
-    description: "The document is in its final form and has been approved by the working group."
+    description: "In its final form and approved by the working group, at version 1.0 or later."
 
 # FFIEC IT Booklet abbreviations mapping
 ffiec_itbooklet_abbreviations:

@@ -1,9 +1,9 @@
 ---
 sequence: 18
-version: "0.1"
+version: "0.2"
 title: Dependency Curation
 layout: mitigation
-doc-status: Draft
+doc-status: First-Reading-Approved
 type: PREV
 nist-sp-800-53r5_references:
   - sr-3   # SR-3 Supply Chain Controls and Processes

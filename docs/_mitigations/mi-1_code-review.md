@@ -1,9 +1,9 @@
 ---
 sequence: 1
-version: "0.1"
+version: "1.0"
 title: Code Review
 layout: mitigation
-doc-status: Draft
+doc-status: Working-Group-Approved
 type: PREV
 phase: CODE
 nist-sp-800-53r5_references:
@@ -99,6 +99,7 @@ related_mitigations:
   - mi-15  # Testing Requirements
   - mi-16  # Test Execution and Sign-Off
   - mi-12  # Deployment Gating
+  - mi-20  # Requirements approval for release
 ---
 <!--
 Licensed under the Community Specification License 1.0.
@@ -120,6 +121,7 @@ Code review complements, but does not replace, automated testing, vulnerability 
 ## Requirements
 
 * The organisation MUST define and maintain a code review policy for reviewable change sets before they are admitted to protected source baselines or equivalent controlled software baselines
+* The code reviewer MUST ensure that the code matches the stated requirements unless deviations are explained
 * The policy MUST define deterministic, machine-evaluable criteria for selecting the required review mode, including when non-deterministic review is mandatory (such as for critical code under NIST SA-11(4)), when non-deterministic review is required only after policy triggers, and when deterministic automated review (such as static analysis under NIST SA-11(1)) may satisfy the control without non-deterministic involvement
 * The policy MUST define which repository artefacts are in scope for review, based on their ability to affect software behaviour, build output, deployment, control operation, or other material SDLC outcomes
 * Source control, workflow, or pipeline controls MUST technically block admission to the protected baseline when the required review outcome is absent, expired, revoked, or no longer bound to the current change set

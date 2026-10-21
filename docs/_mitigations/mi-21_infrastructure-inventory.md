@@ -1,9 +1,9 @@
 ---
 sequence: 21
-version: "0.1"
+version: "0.2"
 title: Infrastructure Dependencies
 layout: mitigation
-doc-status: Draft
+doc-status: First-Reading-Approved
 type: PREV
 phase: RELEASE
 nist-sp-800-53r5_references:

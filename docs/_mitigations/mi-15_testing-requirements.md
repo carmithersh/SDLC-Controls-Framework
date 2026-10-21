@@ -1,9 +1,9 @@
 ---
 sequence: 15
-version: "0.1"
+version: "0.2"
 title: Testing Requirements
 layout: mitigation
-doc-status: Draft
+doc-status: First-Reading-Approved
 type: PREV
 phase: LIFECYCLE
 chain:

@@ -1,9 +1,9 @@
 ---
 sequence: 8
-version: "1.1"
+version: "1.2"
 title: Version Control
 layout: mitigation
-doc-status: First-Reading-Approved
+doc-status: Working-Group-Approved
 type: PREV
 phase: CODE
 nist-sp-800-53r5_references:

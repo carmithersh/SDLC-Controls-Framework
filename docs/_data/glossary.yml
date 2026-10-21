@@ -56,10 +56,10 @@
 - term: Document status
   slug: document-status
   definition: >-
-    The maturity of a control or risk document: Pre-Draft (initial notes), Draft
-    (being written), First-Reading-Approved (passed first working-group reading,
-    substantially complete but not yet final), and Working-Group-Approved (final,
-    approved).
+    The maturity of a control or risk document: Pre-Draft (agreed as needed, not
+    yet written), Draft (open as a pull request for working-group review),
+    First-Reading-Approved (reviewed and merged, may still change), and
+    Working-Group-Approved (final, approved).
 
 - term: Immutability
   slug: immutability

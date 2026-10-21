@@ -1,9 +1,9 @@
 ---
 sequence: 17
-version: "0.1"
+version: "0.2"
 title: Service Dependency Control
 layout: mitigation
-doc-status: Draft
+doc-status: First-Reading-Approved
 type: PREV
 phase: RUNTIME
 nist-sp-800-53r5_references:

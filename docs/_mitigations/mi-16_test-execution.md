@@ -1,9 +1,9 @@
 ---
 sequence: 16
-version: "0.1"
+version: "0.2"
 title: Test Execution and Sign-Off
 layout: mitigation
-doc-status: Draft
+doc-status: First-Reading-Approved
 type: PREV
 phase: BUILD
 chain:

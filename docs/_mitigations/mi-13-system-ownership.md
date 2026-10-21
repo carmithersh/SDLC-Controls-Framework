@@ -1,9 +1,9 @@
 ---
 sequence: 13
-version: "0.1"
+version: "0.2"
 title: System Inventory
 layout: mitigation
-doc-status: Draft
+doc-status: First-Reading-Approved
 type: PREV
 phase: LIFECYCLE
 nist-sp-800-53r5_references:

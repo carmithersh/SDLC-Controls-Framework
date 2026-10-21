@@ -1,9 +1,9 @@
 ---
 sequence: 22
-version: "0.1"
+version: "0.2"
 title: Data Retention and Disposal
 layout: mitigation
-doc-status: Draft
+doc-status: First-Reading-Approved
 type: PREV
 phase: META
 nist-sp-800-53r5_references:

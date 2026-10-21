@@ -1,9 +1,9 @@
 ---
 sequence: 10
-version: "0.1"
+version: "0.2"
 title: Secret Detection
 layout: mitigation
-doc-status: Draft
+doc-status: First-Reading-Approved
 type: PREV
 phase: CODE
 nist-sp-800-53r5_references:

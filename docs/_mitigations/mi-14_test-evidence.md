@@ -1,9 +1,9 @@
 ---
 sequence: 14
-version: "0.1"
+version: "0.2"
 title: Test Evidence Retention
 layout: mitigation
-doc-status: Draft
+doc-status: First-Reading-Approved
 type: PREV
 phase: BUILD
 chain:

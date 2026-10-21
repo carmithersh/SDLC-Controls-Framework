@@ -1,9 +1,9 @@
 ---
 sequence: 9
-version: "0.1"
+version: "0.2"
 title: Component Inventory
 layout: mitigation
-doc-status: Draft
+doc-status: First-Reading-Approved
 type: PREV
 phase: BUILD
 nist-sp-800-53r5_references:

@@ -1,9 +1,9 @@
 ---
 sequence: 19
-version: "0.1"
+version: "0.2"
 title: Version Release Approval Gating
 layout: mitigation
-doc-status: Draft
+doc-status: First-Reading-Approved
 type: PREV
 phase: RELEASE
 nist-sp-800-53r5_references:
